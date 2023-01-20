@@ -22,3 +22,7 @@ li {
 li em {
     font-weight: 700px;
 }
+
+#linguagem li:not(:nth-child(n + 4)) {
+    color: blue;
+}
