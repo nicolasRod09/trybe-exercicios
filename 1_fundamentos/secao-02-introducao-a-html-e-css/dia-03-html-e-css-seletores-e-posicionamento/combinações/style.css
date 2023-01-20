@@ -30,3 +30,45 @@ li em {
 .linguagensJava {
     background-color: pink;
 }
+
+#aliados:hover{
+    font-weight: 700px ;
+}
+
+
+
+#aliados li a[href*="stackoverflow"]{
+    color: orange;
+}
+
+#aliados li a[href*="w3schools"]{
+    color: green;
+}
+
+#aliados li a[href*="mozilla"]{
+    color: black;
+}
+
+#aliados li a[href*="devdocs"]{
+    color: yellow;
+}
+
+#aliados li a[href*="trybe"]{
+    color: green;
+}
+
+/*#aliados li a[href*="stackoverflow"] {
+    color: orange;
+  }
+  #aliados li a[href*="w3schools"] {
+    color: green;
+  }
+  #aliados li a[href*="mozilla"] {
+    color: black;
+  }
+  #aliados li a[href*="devdocs"] {
+    color: yellow;
+  }
+  #aliados li a[href*="trybe"] {
+    color: green;
+  }
