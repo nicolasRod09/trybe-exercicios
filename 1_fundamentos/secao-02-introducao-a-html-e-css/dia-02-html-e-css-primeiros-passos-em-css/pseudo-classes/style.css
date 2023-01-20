@@ -17,16 +17,19 @@ div:nth-of-type(5) {
     background-color: rgb(166, 225, 250);
 }
 div:nth-of-type(1) > h3 {
-    color: purple;
+    color: rgb(255, 124, 255);
   }
   div:nth-of-type(2) > h3 {
-    color: green 
+    color: rgb(132, 252, 132) 
   }
   div:nth-of-type(3) > h3 {
+    color: rgb(250, 235, 215);
     font-size: 20px;
   }
   div:nth-of-type(4) > h3 {
+    color: rgb(127, 255, 212);
     font-family: monospace;
+
   }
   div:nth-of-type(5) > h3 {
     font-style: italic 
