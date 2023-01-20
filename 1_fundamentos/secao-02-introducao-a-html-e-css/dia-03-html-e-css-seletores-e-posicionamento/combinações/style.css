@@ -1,0 +1,7 @@
+ul li {
+    background-color: yellow;
+}
+
+ul , li:nth-child(even) {
+    color: green;
+}
