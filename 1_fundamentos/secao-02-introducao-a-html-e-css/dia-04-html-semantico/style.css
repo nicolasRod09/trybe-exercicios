@@ -30,3 +30,15 @@ h1 {
     width: 300px;
     display: inline-block;
   }
+
+  h3, ul {
+    text-align: center;
+  }
+
+  ul{
+    list-style: none;
+  }
+  
+  #premiacao {
+    display: inline;
+  }
