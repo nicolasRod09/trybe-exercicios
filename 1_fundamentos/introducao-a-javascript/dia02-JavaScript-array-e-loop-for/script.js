@@ -47,12 +47,36 @@ let sum = 0;
 // } else {
 //     console.log("Valor menor ou igual a 20");
 // }
-let higherNumber = [0];
+// let higherNumber = [0];
 
-for (let index = 0; index < numbers.length; index += 1) {
-    if (numbers[index] > higherNumber) {
-        higherNumber = numbers[index]
+// for (let index = 0; index < numbers.length; index += 1) {
+//     if (numbers[index] > higherNumber) {
+//         higherNumber = numbers[index]
+//     }
+// }
+
+// console.log(higherNumber);
+
+// Exercício impar
+
+// for (let index = 0; index < numbers.length; index += 1) {
+//     if (numbers[index] % 2 !== 0) {
+//         result += 1;
+//     }
+// }
+
+// if (result === 0) {
+//     console.log("Nenhum valor ímpar encontrado");
+// } else {
+//     console.log(result);
+// }
+
+let smallestNumber = numbers[0];
+
+for (let index = 1; index < numbers.length; index += 1) {
+    if (numbers[index] < smallestNumber) {
+        smallestNumber = numbers[index];
     }
 }
 
-console.log(higherNumber);
+console.log(smallestNumber);
