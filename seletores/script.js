@@ -12,3 +12,10 @@ for (let index = 0; index < cabecalhoUrgente.length; index += 1) {
 const taskSemUrgencia = document.querySelector('.no-emergency-tasks');
 taskSemUrgencia.style.backgroundColor = 'rgb(249, 219, 94)';
 
+const cabecalhoSemUrgencia = document.querySelectorAll('.no-emergency-tasks h3');
+for (let index = 0; index < cabecalhoSemUrgencia.length; index += 1) {
+    cabecalhoSemUrgencia[index].style.backgroundColor = 'rgb(35, 37, 37)';
+}
+
+const footer = document.getElementById('footer-container');
+footer.style.backgroundColor = 'rgb(0, 53, 51)';
