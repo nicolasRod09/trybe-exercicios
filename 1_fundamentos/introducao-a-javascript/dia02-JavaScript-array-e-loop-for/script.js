@@ -16,7 +16,7 @@
 
 // Agora a prática
 
-// let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let number = [];
 let result = 0;
 let sum = 0;
 
@@ -34,9 +34,9 @@ let sum = 0;
 //   || || || || || || ||
 //   \/ \/ \/ \/ \/ \/ \/
 
-// for (let index = 0; index < numbers.length; index += 1) {
-//     sum += numbers[index];
-// }
+for (let index = 1; index <= number.length; index += 1) {
+    sum += number[index];
+}
 
 // let aritmetic = sum / numbers.length;
 
@@ -81,13 +81,13 @@ let sum = 0;
 
 // console.log(smallestNumber);
 
-let numbers = [];
+// let numbers = [];
 
-for (let index = 1; index <= 25; index += 1) {
-    numbers.push(index);
-}
-// console.log(numbers);
+// for (let index = 1; index <= 25; index += 1) {
+//     numbers.push(index);
+// }
+// // console.log(numbers);
 
-for (let index = 0; index < numbers.length; index += 1) {
-    console.log(numbers[index] / 2);
-}
+// for (let index = 0; index < numbers.length; index += 1) {
+//     console.log(numbers[index] / 2);
+// }

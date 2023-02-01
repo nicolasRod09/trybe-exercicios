@@ -8,7 +8,7 @@
   }
   
   #header-container {
-    color: rgb(243, 102, 102);
+    color: white;
     padding: 20px;
   }
   
@@ -23,7 +23,7 @@
     height: 198px;
   }
   .emergency-tasks h3 {
-    color: rgb(143, 60, 60);
+    color: white;
     margin-top: 10px;
     padding: 10px;
   }
@@ -39,13 +39,13 @@
   }
   
   .no-emergency-tasks h3 {
-    color: rgb(32, 21, 21);
+    color: white;
     margin-top: 10px;
     padding: 10px;
   }
   
   #footer-container {
-    color: rgb(19, 182, 87);
+    color: white;
     font-weight: 700;
     padding: 15px;
     text-align: center;
