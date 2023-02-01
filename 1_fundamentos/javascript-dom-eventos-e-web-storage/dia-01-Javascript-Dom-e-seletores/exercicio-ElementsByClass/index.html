@@ -9,8 +9,12 @@
         <p class="para" id="second-paragraph">Segundo parágrafo!</p>
     </header>
     <script>
-        const paragraph = document.getElementById("paragraph");
-        paragraph.style.color = "red";
+        const paragraphs = document.getElementsByClassName("para");
+        paragraphs[0].style.fontSize = "30px";
+        paragraphs[0].style.color = "blue";
+        const subtitle = document.getElementsByTagName("h4")[0];
+        subtitle.style.color = "green";
+
     </script>
 </body>
 
