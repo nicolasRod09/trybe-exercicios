@@ -24,12 +24,14 @@
 
     </main>
     <script>
-        function ondeVoceEsta() {
-            let onde = document.getElementById("elementoOndeVoceEsta");
-        }
-        function primeiroFdoFilho() {
+        const whereAreU = document.getElementById("elementoOndeVoceEsta");
+        const father = whereAreU.parentElement;
+        father.style.color = "blue";
 
-        }
+        const firstChild = whereAreU.firstElementChild;
+        firstChild.innerText = "Filho do filho";
+
+        const acessFstChildbyDad = father.nextElementSibling;
     </script>
 </body>
 
