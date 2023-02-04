@@ -35,4 +35,5 @@ let player = {
     lastName: "Rodrigues",
     age: 19,
     medals: { golden: 2, silver: 3 }
-}
+};
+console.log("O jogador " + player.name + " " + player.lastName + " tem " + player.age + " " + "anos de idade");
