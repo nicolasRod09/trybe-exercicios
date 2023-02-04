@@ -31,9 +31,12 @@ console.log(conta.banco.cod); // 012
 console.log(conta['banco']['id']); // 4
 
 let player = {
-    name: "Nicolas",
-    lastName: "Rodrigues",
+    name: "Marta",
+    lastName: "Silva",
     age: 19,
     medals: { golden: 2, silver: 3 }
 };
-console.log("O jogador " + player.name + " " + player.lastName + " tem " + player.age + " " + "anos de idade");
+console.log("A jogadora " + player.name + " " + player.lastName + " tem " + player.age + " " + "anos de idade");
+
+player.bestInTheWorld = [2006, 2007, 2008, 2009, 2010, 2018];
+console.log("A jogadora " + player.name + " " + player.lastName + " foi eleita a melhor jogadora do mundo por 6 vezes. " + player.bestInTheWorld);
