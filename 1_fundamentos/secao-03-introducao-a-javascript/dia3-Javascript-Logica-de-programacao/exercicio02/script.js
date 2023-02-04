@@ -14,3 +14,13 @@ for (let index = 0; index < word.length; index += 1) {
 }
 
 console.log(reverse);
+
+let array = ["java", "javascript", "python", "html", "css"];
+let biggestValue = array[0];
+let smallestVallue = array[0];
+
+for (index = 0; index < array.length; index += 1) {
+    if (array.length < smallestVallue) {
+
+    }
+}
