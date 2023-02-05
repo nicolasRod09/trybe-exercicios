@@ -1,7 +1,11 @@
 const a = 10;
 const b = 35;
 const c = 35.5;
-
+//
+const a1 = 60;
+const a2 = 60;
+const a3 = 60;
+let resultado = 0;
 
 // function soma(a, b) {
 //     return a + b;
@@ -53,3 +57,14 @@ function positivoNegativo(a) {
 }
 
 console.log(positivoNegativo(a));
+
+function angulo(a1, a2, a3) {
+    resultado = a1 + a2 + a3;
+    if (resultado === 180) {
+        return "O angulo é válido";
+    } else {
+        return "Angulo invalido";
+    }
+}
+
+console.log(angulo(a1, a2, a3));
