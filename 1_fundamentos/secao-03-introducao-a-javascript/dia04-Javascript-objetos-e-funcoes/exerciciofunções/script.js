@@ -43,3 +43,13 @@ function maiorDe3(a, b, c) {
 }
 
 console.log(maiorDe3(a, b, c));
+
+function positivoNegativo(a) {
+    if (a >= 0) {
+        return "É positivo";
+    } else {
+        return "É negativo"
+    }
+}
+
+console.log(positivoNegativo(a));
