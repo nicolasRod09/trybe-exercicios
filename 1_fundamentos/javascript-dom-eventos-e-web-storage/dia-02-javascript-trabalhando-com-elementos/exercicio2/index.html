@@ -32,7 +32,16 @@
             createElementWhereUAtASon.id = "SonOfElementWhereAreU";
             whereUAtElement.appendChild(createElementWhereUAtASon);
 
+            const firstSonOfSon = document.getElementById("primeiroFilhoDoFilho");
+            const firstSonOfGrandchild = document.createElement("section");
+            createSonOfSon.id = "GrandChilfdOfDad";
+            firstSonOfSon.appendChild(createSonOfSon);
 
+            const thirdSon = firstSonOfSon;
+                .parentElement
+                .parentElement
+                .nextElementSibling;
+            console.log(thirdSon);
         </script>
 
     </main>
