@@ -1,7 +1,7 @@
 ##### Fundamentos do Desenvolvimento Web
 
-- [x ] Internet
-- [x ] Compreender os conceitos básicos de rede e os fundamentos da internet.
+- [ ] Internet
+- [ ] Compreender os conceitos básicos de rede e os fundamentos da internet.
 - [ ] Unix & Bash
 - [ ] Utilizar, com familiaridade, os comandos básicos da linha de comando, executando programas, navegando e manipulando arquivos.
 - [ ] Git
