@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+  <title>Travel Form</title>
+</head>
+<body>
+  <header>
+    <h1 id="title">Formulário Trybe Travel</h1>
+  </header>
+  <main>
+    <form action="" id="main-form">
+      <div class="mb-3">
+        
+        <label class="form-label" for="fullName">
+          Nome Completo:
+          <input class="form-control" type="text" name="fullName" id="fullName" minlength="10" maxlength="40">
+        </label>
+        <br>
+        <br>
+        <label class="form-label" for="email">
+          Email:
+          <input class="form-control" type="email" name="email" id="email" minlength="10" maxlength="50">
+        </label>
+        <br>
+        <br>
+        <label class="form-label" for="destination1">
+          Destino Preferido: <br>
+          Cidade <input type="radio" name="destinations" id="destination1"> 
+        </label>
+        <br>
+        <label class="form-label" for="destination2">
+          Campo <input type="radio" name="destinations" id="destination2"> 
+        </label><br>
+        <label class="form-label" for="destination3">
+          Praia <input type="radio" name="destinations" id="destination3"> 
+        </label>
+        <br>
+        <label class="form-label" for="destination4">
+          Montanha <input type="radio" name="destinations" id="destination4"> 
+        </label>
+        <br>
+        <label class="form-label" for="question">
+          Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip? <br>
+          <textarea class="form-control" name="question" id="question" cols="30" rows="10" maxlength="500"></textarea>
+        </label>
+        <br>
+        <label class="form-label" for="date">
+          Qual a melhor data para realizar sua viagem? <br>
+          <input class="form-control" type="date" id="date">
+        </label>
+        <br>
+        <label class="form-label" for="promo">
+          Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
+          <input type="checkbox" name="promo" id="promo">
+        </label>
+        <br>
+        <label class="form-label" for="agreement">
+          Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
+          <input type="checkbox" name="agreement" id="agreement" required>
+        </label>
+        <br>
+        <button type="submit" id="submit-btn" disabled="disabled">Enviar</button>
+        <button type="reset" id="clear-btn">Limpar</button>
+      </div>
+        
+    </form>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+</body>
+</html>
