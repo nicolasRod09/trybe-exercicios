@@ -64,7 +64,7 @@
           <input type="checkbox" name="agreement" id="agreement" required>
         </label>
         <br>
-        <button type="submit" id="submit-btn" disabled="disabled">Enviar</button>
+        <button type="submit" id="submit-btn">Enviar</button>
         <button type="reset" id="clear-btn">Limpar</button>
       </div>
         
@@ -81,6 +81,30 @@ var picker = new Pikaday({
     }
 });
 field.parentNode.insertBefore(picker.el, field.nextSibling);
+
+const validation = new JustValidate('#form');
+
+validation
+  .addField('#name', [
+    {
+      rule: 'minLength',
+      value: 3,
+    },
+    {
+      rule: 'maxLength',
+      value: 30,
+    },
+  ])
+  .addField('#email', [
+    {
+      rule: 'required',
+      errorMessage: 'Email is required',
+    },
+    {
+      rule: 'email',
+      errorMessage: 'Email is invalid!',
+    },
+  ]);
 </script>
 </body>
 </html>
