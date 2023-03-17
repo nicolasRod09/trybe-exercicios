@@ -51,7 +51,7 @@
         <br>
         <label class="form-label" for="date">
           Qual a melhor data para realizar sua viagem? <br>
-          <input class="form-control" type="date" id="date">
+          <input class="form-control" type="text" id="datepicker">
         </label>
         <br>
         <label class="form-label" for="promo">
@@ -71,5 +71,16 @@
     </form>
   </main>
   <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+  <script src="pikaday.js"></script>
+<script>
+    var picker = new Pikaday({ field: document.getElementById('datepicker') });
+    var field = document.getElementById('datepicker');
+var picker = new Pikaday({
+    onSelect: function(date) {
+        field.value = picker.toString();
+    }
+});
+field.parentNode.insertBefore(picker.el, field.nextSibling);
+</script>
 </body>
 </html>
