@@ -24,12 +24,15 @@ body {
   display: flex;
   flex-basis: 500px;
   order: 1;
+  justify-content: space-between;
+  flex-grow: 1;
 }
 
 .menu-container ul {
   display: flex;
   justify-content: space-around;
   width: 100%;
+  align-self: center;
 }
 
 .menu-container li {
@@ -38,8 +41,4 @@ body {
   font-size: 1.3rem;
   list-style: none;
   margin-right: 10px;
-}
-
-aside {
-
 }
