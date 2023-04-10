@@ -34,7 +34,7 @@ button.addEventListener('click', () => {
         color3: cores[3].style.backgroundColor
     };
 
-    localStorage.setItem('paletteColors', colorsToSave);
+    localStorage.setItem('pixelBoard', colorsToSave);
 });
 
 // Requisito 5

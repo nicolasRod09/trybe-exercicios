@@ -12,43 +12,22 @@ const promo = [
   {product: 'bola de basquete', price: 39.99},
 ];
 
-const button = document.querySelector('#send-button');
+const getInput = document.getElementById('number-id');
 
-button.addEventListener('click', () => {
-  const name = document.querySelector('#name-id').value;
-  const number = document.querySelector('#number-id').value;
 
-  showPromo(name, number);
-});
+const checkIfIsNum = (num) => {
+  if (typeof num !== 'number') {
+    throw new Error('O valor informado deve ser um número');
+  }
+};
 
-const showPromo = (name, number) => {
-  const firstText = document.querySelector('#text-initial');
-  const secondText = document.querySelector('#text-final');
-  
+const createMsg = (num) => {
   try {
-    checkName(name);
-    checkNumber(parseInt(number));
-    const productObject = checkPromo(number);
-
-    firstText.innerHTML = `Boas-vindas, ${name}!`;
-    secondText.innerHTML = `A promoção do dia é: 
-      ${productObject.product} no valor de R$ ${productObject.price}`;
-  } catch(err) {
-    secondText.innerHTML = err.message;
+    checkIfIsNum(num);
+  } catch (error) {
+    return error;
   }
-}
-const checkName = (name) => {
-  let letters = /[aA-zZ]+/;
-  
-  if (!name.match(letters)) {
-    throw new Error('É necessário digitar um nome válido');
-  }
-}
-
-// Segunda parte
-// Segunda parte
-const checkNumber = (number) => {
-  if (isNaN(number)) {
-    throw new Error('É necessário digitar um número');
-  }
-}
+  promo.forEach(element => {
+    
+  });
+};
