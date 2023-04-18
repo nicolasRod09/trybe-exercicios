@@ -9,4 +9,5 @@ const fruitSalad = (fruit, additional) => {
   return `Essa é a sua receita de salada de frutas ${receipe}`;
 };
 
+a
 console.log(fruitSalad(specialFruit, additionalItens));
