@@ -1,22 +1,29 @@
+// Exercício 1
+// const myRemove = require('./src/main');
 
-// A função myRemove(arr, item) recebe um array arr e retorna uma cópia desse array sem o elemento item, caso ele exista no array:
+// describe ('Verifica array', () => {
+//   test ('Verifica se a chamada myRemove retorna o array esperado', () => {
+//     expect(myRemove([1, 2, 3, 4], 3)).toEqual([1, 2, 4]);
+//   });
+//   test ('Verifica se a chamada myRemove não retorna o array', () => {
+//     expect(myRemove([1, 2, 3, 4], 3)).not.toEqual([1, 2, 3, 4]);
+//   });
+//   test ('Verifica se a chamada myRemove retorna o array esperado', () => {
+//     expect(myRemove([1, 2, 3, 4], 5)).toEqual([1, 2, 3, 4]);
+//   })
+// })
 
-// Verifique se a chamada myRemove([1, 2, 3, 4], 3) retorna o array esperado;
+// Exercício 2
+const myFizzBuzz = require('./src/main');
 
-// Verifique se a chamada myRemove([1, 2, 3, 4], 3) não retorna o array [1, 2, 3, 4];
-
-// Verifique se a chamada myRemove([1, 2, 3, 4], 5) retorna o array esperado.
-
-const myRemove = require('./src/main');
-
-describe ('Verifica array', () => {
-  test ('Verifica se a chamada myRemove retorna o array esperado', () => {
-    expect(myRemove([1, 2, 3, 4], 3)).toEqual([1, 2, 4]);
-  });
-  test ('Verifica se a chamada myRemove não retorna o array', () => {
-    expect(myRemove([1, 2, 3, 4], 3)).not.toEqual([1, 2, 3, 4]);
-  });
-  test ('Verifica se a chamada myRemove retorna o array esperado', () => {
-    expect(myRemove([1, 2, 3, 4], 5)).toEqual([1, 2, 3, 4]);
+describe ('Verifica se número é divísivel', () => {
+  it('verifica, se de acordo com o parâmetro recebido, retorna o valor esperado', () => {
+    expect(myFizzBuzz(15)).toBe('fizzbuzz');
+    expect(myFizzBuzz(3)).toBe('fizz');
+    expect(myFizzBuzz(5)).toBe('buzz');
+    expect(myFizzBuzz(8)).toBe(8);
+    expect(myFizzBuzz('1')).toBe(false);
+    
   })
-})
+});
+
