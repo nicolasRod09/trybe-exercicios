@@ -14,16 +14,111 @@
 // })
 
 // Exercício 2
-const myFizzBuzz = require('./src/main');
+// const myFizzBuzz = require('./src/main');
 
-describe ('Verifica se número é divísivel', () => {
-  it('verifica, se de acordo com o parâmetro recebido, retorna o valor esperado', () => {
-    expect(myFizzBuzz(15)).toBe('fizzbuzz');
-    expect(myFizzBuzz(3)).toBe('fizz');
-    expect(myFizzBuzz(5)).toBe('buzz');
-    expect(myFizzBuzz(8)).toBe(8);
-    expect(myFizzBuzz('1')).toBe(false);
+// describe ('Verifica se número é divísivel', () => {
+//   it('verifica, se de acordo com o parâmetro recebido, retorna o valor esperado', () => {
+//     expect(myFizzBuzz(15)).toBe('fizzbuzz');
+//     expect(myFizzBuzz(3)).toBe('fizz');
+//     expect(myFizzBuzz(5)).toBe('buzz');
+//     expect(myFizzBuzz(8)).toBe(8);
+//     expect(myFizzBuzz('1')).toBe(false);
     
-  })
+//   })
+// });
+
+// Exercício 3
+
+// const { encode, decode } = require('./src/main');
+
+// describe ('Testa as funções encode e decode', () => {
+//   it('Verifica se encode é definida', () => {
+//     expect(encode).toBeDefined();
+//   });
+//   it('Verifica se encode é função', () => {
+//     expect(typeof encode).toBe('function');
+//   })
+//   it('Verifica se codifica "a" para 1', () => {
+//     expect(encode('ana')).toBe('1n1');
+//   })
+//   it('Verifica se codifica "e" para 2', () => {
+//     expect(encode('ele')).toBe('2l2');
+//   })
+//   it('Verifica se codifica "i" para 3', () => {
+//     expect(encode('xixi')).toBe('x3x3');
+//   })
+//   it('Verifica se codifica "o" para 4', () => {
+//     expect(encode('ovo')).toBe('4v4');
+//   })
+//   it('Verifica se codifica "u" para 5', () => {
+//     expect(encode('uv')).toBe('5v');
+//   })
+//   it("Verifica se o retorno da função tem o mesmo número de caracteres", () => {
+//     expect(encode('trybe').length).toEqual(5);
+//   })
+//   it('Verifica se decode é definida', () => {
+//     expect(decode).toBeDefined();
+//   })
+//   it('Verifica se decode é função', () => {
+//     expect(typeof decode).toBe('function');
+//   })
+//   it('Verifica se decodifica 1 para "a"', () => {
+//     expect(decode('1n1')).toBe('ana');
+//   })
+//   it('Verifica se decodifica 2 para "e"', () => {
+//     expect(decode('2l2')).toBe('ele');
+//   })
+//   it('Verifica se decodifica 3 para "i"', () => {
+//     expect(decode('x3x3')).toBe('xixi');
+//   })
+//   it('Verifica se decodifica 4 para "o"', () => {
+//     expect(decode('4v4')).toBe('ovo');
+//   })
+//   it('Verifica se decodifica 5 para "u"', () => {
+//     expect(decode('5v')).toBe('uv');
+//   })
+//   it("Verifica se o retorno da função tem o mesmo número de caracteres", () => {
+//     expect(decode('trybe').length).toEqual(5);
+//   })
+// })
+
+// Exercício 4
+const techList = require('./src/main');
+
+describe('Testa a função techList', () => {
+  it('Testa se a função techList é definida', () => {
+    expect(techList).toBeDefined();
+  });
+  it('Testa se techList é uma função', () => {
+    expect(typeof techList).toBe('function');
+  });
+  it('Lista com 5 tecnologias deve retornar uma lista de objetos ordenados', () => {
+    expect(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Lucas')).toEqual([
+      {
+        tech: 'CSS',
+        name: 'Lucas'
+      },
+      {
+        tech: 'HTML',
+        name: 'Lucas'
+      },
+      {
+        tech: 'JavaScript',
+        name: 'Lucas'
+      },
+      {
+        tech: 'Jest',
+        name: 'Lucas'
+      },
+      {
+        tech: 'React',
+        name: 'Lucas'
+      }
+    ]);
+  });
+  it('Lista com 0 tecnologias deve retornar uma mensagem de erro "Vazio!"', () => {
+    expect(techList([], 'Lucas')).toBe('Vazio!');
+  });
 });
+
 
