@@ -1,0 +1,29 @@
+body {
+  width: 100%;
+  background-image: url(./image/nx5sjc8hhiw71.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+}
+
+#image {
+  width: 300px;
+  border-radius: 10px;
+}
+
+.card {
+  text-align: center;
+}
+
+button {
+display: flex;
+justify-content: center;
+align-content: center;
+align-items: center;
+align-self: center;
+}
